@@ -1,10 +1,21 @@
 #!/usr/bin/env ruby
 
-class HelloWorldSayer
-  def say_it
-    puts "Hello, #sarma!"
+class Sarma
+  def hashtag
+    "#sarma"
   end
 end
 
-sayer = HelloWorldSayer.new
+class HelloWorldSayer
+  def initialize(greetee)
+    @greetee = greetee
+  end
+
+  def say_it
+    puts "Hello, #{@greetee.hashtag}!"
+  end
+end
+
+sarma = Sarma.new
+sayer = HelloWorldSayer.new(sarma)
 sayer.say_it
