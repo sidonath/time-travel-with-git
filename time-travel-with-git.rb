@@ -7,10 +7,15 @@ class Sarma
 end
 
 class HelloWorldSayer
+  def initialize(greetee)
+    @greetee = greetee
+  end
+
   def say_it
-    puts "Hello, #{Sarma.new.hashtag}!"
+    puts "Hello, #{@greetee.hashtag}!"
   end
 end
 
-sayer = HelloWorldSayer.new
+sarma = Sarma.new
+sayer = HelloWorldSayer.new(sarma)
 sayer.say_it
