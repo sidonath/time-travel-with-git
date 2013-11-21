@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
 
-puts "Hello, #sarma"
+class HelloWorldSayer
+  def say_it
+    puts "Hello, #sarma"
+  end
+end
+
+sayer = HelloWorldSayer.new
+sayer.say_it
