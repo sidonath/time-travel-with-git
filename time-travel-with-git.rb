@@ -2,7 +2,7 @@
 
 class HelloWorldSayer
   def say_it
-    puts "Hello, #sarma"
+    puts "Hello, #sarma!"
   end
 end
 
